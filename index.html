@@ -1,0 +1,58 @@
+ 
+<html>
+    <head>
+      <title>Identificador de Imagens</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+     <link rel="stylesheet" href="style.css">
+    
+    </head>
+  
+    <body>
+    <div class="container">
+      
+      <center>
+        
+        <h3 style="font-size: 26; font-weight: 400;">Identificador de pessoas: </h3>
+        <br>
+  
+        <p style="font-size: 24px; font-weight: 300;">O modelo foi treinado para indentificar estas pessoas(animal): </p>
+  
+        <div class="nameOfObjects">
+
+          malu
+         <hr>
+         cleiton
+         <hr>
+          mike 
+         <hr>
+
+        </div>
+  
+        <p style="font-size: 24px; font-weight: 300;">Visualização da webcam  </p>
+        <div id="camera"> </div>
+        <br><br>
+        <div id="result"> </div>
+        <br><br>
+        <button onclick="takeSnapshot();" class="btn btn-info">Capturar Imagem</button>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">Identificar Imagem</button>
+        <br><br>
+  
+        <p style="font-size: 22px;">pessoa : <span id="resultObjectName"></span> </p>
+        <p style="font-size: 22px;">Precisão : <span id="resultObjectAccuracy"></span> </p>
+      </center>
+    
+    </div>
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
